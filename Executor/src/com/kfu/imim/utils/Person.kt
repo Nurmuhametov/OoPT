@@ -10,7 +10,7 @@ class Person(_fullname: String, _freehours: Int) {
         fullname = _fullname;
         freehours = _freehours;
     }
-
+//
     constructor(_fullname: String, _freehours: Int, _technologies: HashMap<String,Int>) : this(_fullname, _freehours) {
         technologies.putAll(_technologies);
     }
