@@ -206,4 +206,9 @@ object Balancer {
         arraylist = Recommendations(taskInstance,Recommendations(taskInstance,Recommendations(taskInstance,Recommendations(taskInstance, listofperson).searchByWords()).recommendationOfTime()).recommendationOfTechnologies()).skillLevelAndSkillNameSorted();
         return arraylist;
     }
+
+    fun balance (taskInstanceCreateStructure: TaskInstanceCreateStructure) : Recommendations {
+
+        return Recommendations()
+    }
 }
