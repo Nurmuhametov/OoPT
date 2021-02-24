@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id=":core:test" external.linked.project.path="$USER_HOME$/Downloads/Test/core" external.root.project.path="$USER_HOME$/Downloads/Test" external.system.id="GRADLE" external.system.module.group="Test" external.system.module.type="sourceSet" external.system.module.version="1.0" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_7">
+    <output-test url="file://$USER_HOME$/Downloads/Test/core/build/classes/java/test" />
+    <exclude-output />
+    <content url="file://$USER_HOME$/Downloads/Test/core/src/test" />
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="Test.core.main" />
+    <orderEntry type="library" name="Gradle: com.badlogicgames.gdx:gdx:1.9.11" level="project" />
+  </component>
+  <component name="TestModuleProperties" production-module="Test.core.main" />
+</module>

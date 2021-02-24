@@ -5,67 +5,70 @@ import kotlin.collections.ArrayList
 
 //Класс для создания заданий. Сюда можно затолкать всё, что будет характеризовать задание. На основе этого класса
 //будем создавать экземпляры класса TaskInstance
-class TaskInstanceCreateStructure(_descr: String, _tech: ArrayList<String>, _deadline: Date,_payment:Int) {
+class TaskInstanceCreateStructure(_descr: String, _tech: ArrayList<String>, _deadline: Date, _payment: Int, _skilllevel: Int) {
     private var description: String; //описание задачи
     private val technologies: ArrayList<String> = arrayListOf();// список требуемых навыков
-    private var prize : Int = 0;// премия за выполение в срок
+    private var prize: Int = 0;// премия за выполение в срок
     private val deadline: Date;
-    private var status : Status;// статус задания
+    private var status: Status;// статус задания
     private var payment: Int; // оплата за задание
+    private var skilllevel: Int;
 
-
-
-    init{
+    init {
         description = _descr;
         technologies.addAll(_tech);
         deadline = _deadline.clone() as Date;
         status = Status.WAITING;
         payment = _payment;
-
+        skilllevel = _skilllevel;
     }
 
-    constructor(_descr: String, _tech: ArrayList<String>, _deadline: Date, _prize: Int, _payment:Int): this(_descr, _tech, _deadline, _payment){
+    constructor(_descr: String, _tech: ArrayList<String>, _deadline: Date, _prize: Int, _payment: Int, _skilllevel: Int) : this(_descr, _tech, _deadline, _payment, _skilllevel) {
         prize = _prize;
     }
 
-    public fun getDescription(): String{
+    public fun getDescription(): String {
         return description;
     }
 
-    public fun getTechnologies(): ArrayList<String>{
+    public fun getTechnologies(): ArrayList<String> {
         val new_technologies: ArrayList<String> = arrayListOf();
         new_technologies.addAll(technologies);
         return new_technologies;
     }
 
-    public fun getPrize(): Int{
+    public fun getPrize(): Int {
         return prize;
     }
 
-    public fun getDeadline(): Date{
+    public fun getDeadline(): Date {
         return deadline.clone() as Date;
     }
 
-    public fun getPayment(): Int{
+    public fun getPayment(): Int {
         return payment;
     }
 
-    public fun getStatus(): Status{
+    public fun getSkilllevel(): Int {
+        return skilllevel;
+    }
+
+    public fun getStatus(): Status {
         return status;
     }
 
-    public fun setStatus(value: Status){
+    public fun setStatus(value: Status) {
         status = value;
     }
 
-    public fun clone(): TaskInstanceCreateStructure{
-        val new_object = TaskInstanceCreateStructure(this.getDescription(),this.getTechnologies(),this.getDeadline(),this.getPayment(),this.getPrize());
+    public fun clone(): TaskInstanceCreateStructure {
+        val new_object = TaskInstanceCreateStructure(this.getDescription(), this.getTechnologies(), this.getDeadline(), this.getPayment(), this.getPrize());
         return new_object;
     }
 
 }
 
-enum class Status{
+enum class Status {
     COMPLETE, // задание завершено
     INWORK,// задание находится в работе
     WAITING//задание ожидает исполнителей

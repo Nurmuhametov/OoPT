@@ -9,6 +9,13 @@
       <module fileurl="file://$PROJECT_DIR$/Optimizer/Optimizer.iml" filepath="$PROJECT_DIR$/Optimizer/Optimizer.iml" />
       <module fileurl="file://$PROJECT_DIR$/Server/Server.iml" filepath="$PROJECT_DIR$/Server/Server.iml" />
       <module fileurl="file://$PROJECT_DIR$/TaskInstance/TaskInstance.iml" filepath="$PROJECT_DIR$/TaskInstance/TaskInstance.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Test.iml" filepath="$PROJECT_DIR$/.idea/modules/Test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/core/Test.core.iml" filepath="$PROJECT_DIR$/.idea/modules/core/Test.core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/core/Test.core.main.iml" filepath="$PROJECT_DIR$/.idea/modules/core/Test.core.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/core/Test.core.test.iml" filepath="$PROJECT_DIR$/.idea/modules/core/Test.core.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/desktop/Test.desktop.iml" filepath="$PROJECT_DIR$/.idea/modules/desktop/Test.desktop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/desktop/Test.desktop.main.iml" filepath="$PROJECT_DIR$/.idea/modules/desktop/Test.desktop.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/desktop/Test.desktop.test.iml" filepath="$PROJECT_DIR$/.idea/modules/desktop/Test.desktop.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/Оптимизация производственных задач.iml" filepath="$PROJECT_DIR$/Оптимизация производственных задач.iml" />
     </modules>
   </component>
