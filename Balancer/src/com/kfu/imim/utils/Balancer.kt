@@ -12,6 +12,9 @@ import kotlin.collections.HashMap
 
 
 
+
+
+
 class Test() {
     private var persons: ArrayList<Person>;
 
@@ -74,7 +77,7 @@ class Test() {
     var taskInstance = TaskInstance(taskInstanceCreateStructure, 3, arrayOf(subTask));
 
     public fun go(): ArrayList<Person> {
-        return Recommendations(taskInstance, persons).recommendationOfTime();
+        return Recommendations(taskInstance, persons).skillLevelAndSkillNameSorted();
     }
 }
 
@@ -203,12 +206,9 @@ object Balancer {
         //Эта функция принимает задачу и возвращает оптимальные рекомендации по времени/исполнителям/ресурсам
         //Вызывается из окна отрисовки клиента. Само собой этих исполнителей ещё надо получить
         var arraylist: ArrayList<Person> = arrayListOf();
-        arraylist = Recommendations(taskInstance,Recommendations(taskInstance,Recommendations(taskInstance,Recommendations(taskInstance, listofperson).searchByWords()).recommendationOfTime()).recommendationOfTechnologies()).skillLevelAndSkillNameSorted();
+        arraylist = Recommendations(taskInstance, Recommendations(taskInstance, Recommendations(taskInstance, Recommendations(taskInstance, listofperson).searchByWords()).recommendationOfTime()).recommendationOfTechnologies()).skillLevelAndSkillNameSorted();
         return arraylist;
     }
 
-    fun balance (taskInstanceCreateStructure: TaskInstanceCreateStructure) : Recommendations {
 
-        return Recommendations()
-    }
 }
